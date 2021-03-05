@@ -1,10 +1,11 @@
 import React from 'react'
 import classes from './ChangeUser.module.css'
+import mainClasses from '../../styles/main.module.css';
 import Navbar from '../Navbar/Navbar.js'
 import { useHistory } from 'react-router-dom'
 
 const ChangeUser = (props) => {
-  let users = props.store.getState().users
+  let users = props.store.getState().users.data
   const history = useHistory()
   const userId = history.location.pathname.match(/\d+/)
   let user = users[0]
@@ -29,9 +30,9 @@ const ChangeUser = (props) => {
   }
 
   return (
-    <div className={classes.main}>
-      <Navbar />
-      <div className={classes.content}>
+    <div className={mainClasses.main}>
+      <Navbar store={props.store}/>
+      <div className={mainClasses.content}>
         <h1>Change user parameters</h1>
         <div className={classes.hero}>
           <div className={classes.formBox}>

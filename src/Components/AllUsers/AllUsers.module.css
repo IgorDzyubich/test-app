@@ -2,10 +2,14 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  background-color: silver;
 }
 .content {
-  width: 80%;
+  width: 85%;
   height: max-content;
+  padding: 10px;
+  position: relative;
+  left: 15%;
   padding: 10px;
 }
 .wrapper {

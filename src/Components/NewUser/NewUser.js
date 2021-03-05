@@ -3,7 +3,7 @@ import classes from './NewUser.module.css'
 import { useHistory } from "react-router-dom";
 
 const NewUser = (props) => {
-  const users = props.store.getState().users
+  const users = props.store.getState().users.data
   const history = useHistory();
 
   const addUser = (e) => {

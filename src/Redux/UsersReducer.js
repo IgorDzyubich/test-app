@@ -1,3 +1,5 @@
+import { SET_USER_DETAILS, API_START, API_END, FETCH_USER_DETAILS } from "../actions/types";
+
 let initialState = [
     {
       id: 1,
@@ -26,8 +28,30 @@ let initialState = [
     }
   ]
 
-const usersReduser = (state = initialState) => {
-  return state
-}
+const usersReduser = (state = initialState, action) => {
 
+  console.log("action type => ", action.type);
+  switch (action.type) {
+    case SET_USER_DETAILS:
+      return { data: action.payload };
+    case API_START:
+      if (action.payload === FETCH_USER_DETAILS) {
+        return {
+          ...state,
+          isLoadingData: true
+        };
+      }
+      break;
+    case API_END:
+      if (action.payload === FETCH_USER_DETAILS) {
+        return {
+          ...state,
+          isLoadingData: false
+        };
+      }
+      break;
+    default:
+      return state;
+  }
+}
 export default usersReduser

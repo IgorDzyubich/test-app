@@ -4,13 +4,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: silver;
 }
 .formBox {
   width: 380px;
   height: max-content;
   margin: 6% auto;
   background: #fff;
-  padding: 20px;
+  padding: 10px;
 }
 .inputGroup {
   display: block;
