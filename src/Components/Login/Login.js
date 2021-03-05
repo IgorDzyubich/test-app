@@ -24,7 +24,6 @@ const Login = (props) => {
   };
 
     return <div className={classes.hero}>
-              <h1>Cyfral-Service</h1>
               <div className={classes.formBox}>
                 <form className={classes.inputGroup}>
                   <label htmlFor="user-select" className={classes.label}>Enter Login:</label>

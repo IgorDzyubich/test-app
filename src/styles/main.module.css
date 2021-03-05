@@ -1,16 +1,15 @@
 .main {
   position: fixed;
-  width: 100%;
+  left: 10%;
+  width: 90%;
   height: 100%;
   background-color: silver;
 }
 .content {
   width: 80%;
   height: 80%;
-  position: relative;
-  left: 15%;
   padding: 10px;
-  margin-top: 10px;
+  margin: 20px auto;
   background-color: white;
 }
 .wrapper {

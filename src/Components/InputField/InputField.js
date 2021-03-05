@@ -1,7 +1,6 @@
 import React from 'react'
 import classes from './InputField.module.css'
 import mainClasses from '../../styles/main.module.css';
-import Navbar from '../Navbar/Navbar.js'
 
 const InputField = (props) => {
 
@@ -14,7 +13,6 @@ const InputField = (props) => {
 
   return (
     <div className={mainClasses.main}>
-      <Navbar store={props.store}/>
       <div className={mainClasses.content}>
           <div>
           <label htmlFor="input">Input Field:</label>

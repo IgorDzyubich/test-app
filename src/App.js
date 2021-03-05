@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Header from './Components/Header/Header';
+import Navbar from './Components/Navbar/Navbar.js'
 import './App.css';
 import { fetchUserDetails } from './actions';
 
@@ -18,6 +19,7 @@ class App extends Component {
         <div className='app-wrapper'> 
           <Header /> 
           <div className='app-wrapper-content'>
+          <Navbar store={this.props.store}/>
           { children }
           </div> 
         </div> 

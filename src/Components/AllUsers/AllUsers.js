@@ -1,6 +1,5 @@
 import React from 'react';
 import mainClasses from '../../styles/main.module.css';
-import Navbar from '../Navbar/Navbar.js'
 import { useHistory } from "react-router-dom";
 
 const AllUsers = (props) => {
@@ -14,7 +13,6 @@ const AllUsers = (props) => {
     }
     
     return <div className={mainClasses.main}>
-                <Navbar store={props.store}/>
                 <div className={mainClasses.content}>
                     <div className="container">
                         <div className="row">

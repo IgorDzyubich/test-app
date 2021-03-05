@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar.js'
 import classes from './UserProfile.module.css'
 import { useHistory } from "react-router-dom";
 
@@ -11,7 +10,6 @@ const UserProfile = (props) => {
  
     return   (
         <div className={classes.main}>
-            <Navbar store={props.store} userId={userId}/>
             <div className={classes.content}>
             <div className="container">
                 <div className="row">
