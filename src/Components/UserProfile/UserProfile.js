@@ -7,7 +7,7 @@ const UserProfile = (props) => {
     const history = useHistory();
     const userId = history.location.pathname.match(/\d+/)
     const user = users.find(item => item.id === Number(userId[0]))
- 
+    console.log('User Profile state =>', props.store.getState())
     return   (
         <div className={classes.main}>
             <div className={classes.content}>

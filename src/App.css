@@ -3,7 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+.app-wrapper {
+  height: calc(100vh - 70px);
+}
 .app-wrapper-content {
   display: flex;
   flex-direction: row;
+  margin: 75px auto;
+  height: 100%;
 }
